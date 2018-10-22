@@ -1,7 +1,7 @@
-// This variable holds the array of employee objects
+// this variable will hold the array of employee objects
 let ourData;
 
-/* Ajax jQuery Starts. It processes each employee data and prints them in the page */
+/* ajax jQuery Starts. It processes each employee data and prints them in the page */
 $.ajax({
   url: 'https://randomuser.me/api?results=12&gender=female',
   dataType: 'json',
@@ -19,8 +19,8 @@ $.ajax({
       html += `</div>`;
       html += `</div>`;
       $('#gallery').append(html);
-    });
-    const $card = $('.card'); // This holds an array of divs(.cards)
+    }); // printing loop ends
+    const $card = $('.card'); // this holds an array of divs(.cards)
     $card.on('click', function () {
       let html;
       const theIndex = $(this).index();
@@ -39,12 +39,12 @@ $.ajax({
       html += `</div>`;
       html += `</div>`;
       $('body').append(html);
-    });
-    // The event listener below is for the closing button
+    }); // clicking on cards event listener ends
+    // the event listener below is for the closing button
     $('body').on('click', function (e) {
       if (e.target.className === 'modal-close-btn' || e.target.textContent === 'X') {
         $('.modal-container').fadeOut();
       }
-    });
-  }
-});
+    }); // closing button event listener ends
+  } // success ends
+}); // ajax ends
