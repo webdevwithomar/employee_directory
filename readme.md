@@ -1,5 +1,5 @@
 # Public Request API
-### An awesome API that pulls random users from randomuser.me
+### An awesome app that pulls API to generate random users from randomuser.me
 
 - This app uses jQuery alongside with JavaScript.
 - This app generates random users by using an API.
