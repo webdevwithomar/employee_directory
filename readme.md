@@ -1,4 +1,4 @@
-# Public Request API
+# Employee Directory
 ### An awesome app that pulls API to generate random users from randomuser.me
 
 - This app uses jQuery alongside with JavaScript.
